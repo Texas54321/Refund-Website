@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Refund - The Bank That Pays You Back</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Quick Refund</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#waitlist" class="nav-cta">Sign In</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Live Refunds Ticker -->
+    <section class="ticker-section">
+        <div class="ticker-container">
+            <div class="ticker-label">🔴 LIVE REFUNDS</div>
+            <div class="ticker-content">
+                <div class="ticker-scroll">
+                    <div class="ticker-item">Sarah M. received $85.50 from Netflix</div>
+                    <div class="ticker-item">John D. received $42.00 from Amazon</div>
+                    <div class="ticker-item">Emma L. received $127.30 from Uber Eats</div>
+                    <div class="ticker-item">Alex K. received $95.75 from Spotify</div>
+                    <div class="ticker-item">Maya P. received $63.25 from DoorDash</div>
+                    <div class="ticker-item">Sarah M. received $85.50 from Netflix</div>
+                    <div class="ticker-item">John D. received $42.00 from Amazon</div>
+                    <div class="ticker-item">Emma L. received $127.30 from Uber Eats</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section - Split Screen -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-cube cube1"></div>
+            <div class="floating-cube cube2"></div>
+            <div class="floating-cube cube3"></div>
+            <div class="glow-orb orb1"></div>
+            <div class="glow-orb orb2"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="hero-title">The Bank That Pays You Back</h1>
+                <p class="hero-subtitle">Get automatic refunds on every purchase. Turn your spending into savings with AI-powered fraud detection and instant cash returns.</p>
+                <div class="hero-ctas">
+                    <button class="btn btn-primary" onclick="scrollToWaitlist()">Get Started</button>
+                    <button class="btn btn-secondary" onclick="navigateTo('/signup')">Create Account</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">$2.5M+</span>
+                        <span class="stat-label">Refunded</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2.5%</span>
+                        <span class="stat-label">APY</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                <span style="font-size: 12px;">9:41</span>
+                                <svg width="20" height="12" viewBox="0 0 20 12" fill="none">
+                                    <rect x="16" y="2" width="3" height="8" fill="currentColor"/>
+                                    <rect x="11" y="3" width="3" height="7" fill="currentColor"/>
+                                    <rect x="6" y="4" width="3" height="6" fill="currentColor"/>
+                                    <rect x="1" y="5" width="3" height="5" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="phone-content">
+                                <div class="notification">
+                                    <div class="notification-icon">✓</div>
+                                    <div class="notification-text">
+                                        <div class="notification-title">Refund Processed</div>
+                                        <div class="notification-amount">+$45.00</div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards">
+                                    <div class="balance-card">
+                                        <span>Total Refunded</span>
+                                        <div class="balance-amount">$1,245.30</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="proof-title">Trusted by users who got refunds from:</p>
+            <div class="logos-grid">
+                <div class="logo-item">
+                    <span>Netflix</span>
+                </div>
+                <div class="logo-item">
+                    <span>Amazon</span>
+                </div>
+                <div class="logo-item">
+                    <span>Uber</span>
+                </div>
+                <div class="logo-item">
+                    <span>Spotify</span>
+                </div>
+                <div class="logo-item">
+                    <span>DoorDash</span>
+                </div>
+                <div class="logo-item">
+                    <span>Apple</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">💳</div>
+                    <h3>Connect Your Card</h3>
+                    <p>Link your debit or credit card securely. We use bank-level encryption to keep your data safe.</p>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🤖</div>
+                    <h3>AI Scans for Refunds</h3>
+                    <p>Our AI continuously monitors your transactions and identifies eligible refunds automatically.</p>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">💰</div>
+                    <h3>Get Cash Instantly</h3>
+                    <p>Receive refunds directly in your account. No waiting, no complicated claims.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Highlight - Bento Grid -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose Quick Refund?</h2>
+            <div class="bento-grid">
+                <div class="bento-item large">
+                    <div class="feature-icon">💎</div>
+                    <h3>0% Fees</h3>
+                    <p>No hidden charges. No subscription. Earn money without paying anything.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="feature-icon">📈</div>
+                    <h3>2.5% APY</h3>
+                    <p>Earn interest on your balance even while your refunds process.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Auto Dispute</h3>
+                    <p>We handle disputes automatically. You sit back and relax.</p>
+                </div>
+
+                <div class="bento-item large">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Refunds processed in seconds, not days. Experience the speed of modern banking.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real Analytics</h3>
+                    <p>Track your refunds, spending patterns, and savings in real-time.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>FDIC Insured</h3>
+                    <p>Your deposits are protected up to $250,000.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security" id="security">
+        <div class="container">
+            <h2>Bank-Grade Security</h2>
+            <div class="security-grid">
+                <div class="security-item">
+                    <div class="security-icon">🔐</div>
+                    <h3>256-Bit Encryption</h3>
+                    <p>Military-grade encryption protects every transaction and personal detail.</p>
+                </div>
+
+                <div class="security-item">
+                    <div class="security-icon">🏛️</div>
+                    <h3>FDIC Insurance</h3>
+                    <p>Your deposits are insured by the Federal Deposit Insurance Corporation.</p>
+                </div>
+
+                <div class="security-item">
+                    <div class="security-icon">🔍</div>
+                    <h3>24/7 Monitoring</h3>
+                    <p>Our systems monitor accounts 24/7 for suspicious activity and fraud.</p>
+                </div>
+
+                <div class="security-item">
+                    <div class="security-icon">✅</div>
+                    <h3>Compliance</h3>
+                    <p>Fully compliant with GDPR, SOC 2, and banking regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <section class="waitlist" id="waitlist">
+        <div class="waitlist-content">
+            <h2>Ready to Start Getting Refunds?</h2>
+            <p>Join thousands of users earning money automatically.</p>
+            <form class="waitlist-form" id="waitlistForm">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email address" 
+                    required
+                    id="emailInput"
+                >
+                <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+            </form>
+            <p class="form-note">We'll never spam you. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quick Refund</h4>
+                    <p>The bank that pays you back.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quick Refund Bank. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
